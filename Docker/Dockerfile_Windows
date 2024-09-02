@@ -10,6 +10,6 @@ RUN Invoke-WebRequest -Uri $('https://updates.jenkins-ci.org/download/war/2.242/
 
 VOLUME C:\\jenkins
 
-EXPOSE 8080
+EXPOSE 9001
 
 CMD [ "java", "-jar", "c:\\jenkins.war" ]
