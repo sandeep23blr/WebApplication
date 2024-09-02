@@ -11,7 +11,7 @@ COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 COPY --chown=jenkins:jenkins ./relative_path_to_scripts/scripts/ ${JENKINS_HOME}/init.groovy.d/
 
 # Copy the plugins.txt file to the Jenkins reference directory
-COPY ./relative_path_to_plugins/plugins.txt /usr/share/jenkins/ref/plugins.txt
+COPY ./Docker/plugins.txt /usr/share/jenkins/ref/plugins.txt
 
 # Install Jenkins plugins
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
