@@ -10,5 +10,3 @@ COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 # Install Jenkins plugins
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
-# Expose port 9001
-EXPOSE 9001
